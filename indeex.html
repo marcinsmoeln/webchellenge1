@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>webChellenge 1</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("input").focusin(function(){
+         $("label").find("img").css("border-right","none");
+    });
+    $("input").focusout(function(){
+        $("label").find("img").css("border-right","solid 1px #a1a1a1");
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+<div class="container">
+	<header>
+	
+		<div class="logo">
+		
+			<img alt="logo" src="logo.png"> 
+			
+		</div>
+		</header>
+		
+		<main>
+		<section class="left">
+		<div class="register">
+		<h2>Register Form </h2>
+			<form>
+			
+			<div class="input"> 
+		<div class="l">
+			<label for="name">
+			<img alt="man" src="img/man.png"/>
+			</label>
+		</div>
+			
+		<div class="r">
+			<input type="text" id="name" placeholder="Username"/> 
+
+			</div>
+			</div>
+			
+			<div class="input"> 
+				<div class="l">
+			<label>
+			<img  alt="padlock" src="img/padlock.png"/>
+			</label>
+			</div>
+				<div class="r">
+			<input type="text" placeholder="Password value"/> 
+			</div>
+			</div>
+			
+			<div class="input"> 
+				<div class="l">
+			<label>
+			<img  alt="padlock" src="img/padlock.png"/>
+			</label>
+			</div>
+				<div class="r">
+			<input type="text" placeholder="Confirm password"/> 
+			</div>
+			</div>
+			
+			<div class="input"> 
+				<div class="l">
+			<label>
+			<img  alt="envelope" src="img/envelope.png"/>
+			</label>
+			</div>
+				<div class="r">
+			<input type="text" placeholder="Email"/> 
+			</div>
+			</div>
+			
+			<div class="input"> 
+				<div class="l">
+			<label>
+			<img  alt="location" src="img/location.png"/>
+			</label>
+			</div>
+			
+				<div class="r">
+			<select>
+			<option>Gdynia	</option>
+			<option>Gdańsk	</option>
+			<option>Sopot	</option>
+			</select>
+			</div>
+			</div>
+			
+	
+
+
+			<div class="row">
+			<div class="square">
+				<input type="checkbox" id="square"/>
+			
+			<label for="square"></label>
+			</div>
+			<p>	I have read and accept the terms of use </p>
+			</div>
+			<input type="submit" value="Sign up"/>
+			
+			</form>
+		
+		</div>
+		
+		
+		<div class="send">
+		<h2>Send Email</h2>
+		<form>
+		<div class="input"> 
+		<div class="l">
+		<label>
+			<img  alt="man" src="img/man.png"/>
+			</label>
+			</div>
+			<div class="r">
+			<input type="text" placeholder="Username"/> 
+			</div>
+			</div>
+			
+				
+			<div class="input"> 
+			<div class="l">
+			<label>
+			<img  alt="envelope" src="img/envelope.png"/>
+			</label>
+			</div>
+			<div class="r">
+			<input type="text" placeholder="Email"/> 
+			</div>
+			</div>
+			
+			<textarea placeholder="Type your message here..." > </textarea>
+			<div class="row">
+			<div class="square">
+				<input type="checkbox" id="square1"/>
+			
+			<label for="square1"></label>
+			</div>
+			<p>	I have read and accept the terms of use </p>
+			</div>
+					<input type="submit" value="Send Email"/>
+		</form>
+		
+		</div>
+		</section>
+		
+		
+		
+		
+		<section class="right">
+	
+	<div class="sign">
+		<h2>Send Email</h2>
+		<form>
+		<div class="input"> 
+			<div class="l">
+		<label>
+			<img   alt="man" src="img/man.png"/>
+			</label>
+			</div>
+			
+				<div class="r">
+			<input type="text" placeholder="Username"/> 
+			</div>
+			</div>
+			
+			
+			<div class="input"> 
+				<div class="l">
+			<label>
+			<img  alt="padlock"  src="img/padlock.png"/>
+			</label>
+			</div>
+				<div class="r">
+			<input type="text" placeholder=" Confirm password"/> 
+			</div>
+			</div>
+			
+			<div class="rows">
+			<div class="square">
+				<input type="checkbox" id="square2"/>
+			
+			<label for="square2"></label>
+			</div>
+			<p>Remember</p>
+			<input type="submit" class="button-half" value="Sign up"/>
+			</div>
+			
+		</form>
+		</div>
+		
+		
+		<div class="recover">
+		<h2>Recover Form </h2>
+			<form>
+			<div class="input"> 
+				<div class="l">
+			<label>
+			<img  alt="man"  src="img/man.png"/>
+		</label>
+		</div>
+			<div class="r">
+			<input type="text" placeholder="Username"/> 
+			</div>
+			</div>
+			
+			<div class="input"> 
+				<div class="l">
+			<label>
+			<img  alt="phone" src="img/phone.png"/>
+			</label>
+			</div>
+				<div class="r">
+			<input type="text" placeholder="Enter your Phone number"/> 
+			</div>
+			</div>
+			<div class="rows">
+			<input type="submit" class="send" value="Send"/>
+			<input type="submit" class="done" value="Done"/>
+			</div>
+			</form>
+		</div>
+		
+		
+		
+		<div class="subscribe">
+		
+		<h2>Subscribe Form</h2>
+		<form>
+			<div class="input"> 
+				<div class="l">
+			<label>
+			<img  alt="man" src="img/man.png"/>
+			</label>
+			</div>
+				<div class="r">
+			<input type="text" placeholder="Enter your Email"/> 
+			</div>
+			</div>
+			
+			<div class="rows">
+			<input type="submit" class="send" value="Subscribe"/>
+			<input type="submit" class="done" value="No,Thanks"/>
+			</div>
+			</form>
+			</div>
+			<footer>
+		<img  alt="logo" src="logofooter.png"/>
+		</footer>
+		</section>
+		
+		
+
+</main>
+</div>
+</body>
+</html>
